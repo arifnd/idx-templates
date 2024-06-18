@@ -5,6 +5,8 @@
   ];
 
   bootstrap = ''
+    export HOME=/home/user
+
     composer create-project laravel/laravel:10.x "$out"
 
     cd "$out"
