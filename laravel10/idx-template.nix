@@ -18,5 +18,5 @@
     mkdir -p "$out/.idx/"
 
     cp -rf ${./dev.nix} "$out/.idx/dev.nix"
-  ''
+  '';
 }
