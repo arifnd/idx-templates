@@ -1,1 +1,1 @@
-# idx-templates
+# Unofficial IDX Templates
