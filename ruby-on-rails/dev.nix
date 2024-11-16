@@ -12,6 +12,7 @@
     pkgs.gcc
     pkgs.gnumake
     pkgs.sqlite
+    pkgs.tzdata
   ];
   # Sets environment variables in the workspace
   env = {};
@@ -38,6 +39,7 @@
     workspace = {
       # Runs when a workspace is first created
       onCreate = {
+        bundle-install = "nix-shell -p libyaml && bundle install";
         # Open editors for the following files by default, if they exist:
         default.openFiles = [ ".idx/dev.nix" "README.md" ];
       };
