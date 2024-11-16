@@ -1,5 +1,6 @@
 {pkgs}: {
   packages = [
+    pkgs.libyaml
     pkgs.ruby_3_2
     pkgs.rubyPackages_3_2.rails
     pkgs.bundler
@@ -9,11 +10,11 @@
   ];
 
   bootstrap = ''
-    /google/idx/builtins/bin/nix-shell -p libyaml
+    #/google/idx/builtins/bin/nix-shell -p libyaml
 
     export HOME=/home/user
 
-    /usr/bin/rails new "$out"
+    rails new "$out"
 
     cp -rf ${./application.rb} "$out/config/application.rb"
 
