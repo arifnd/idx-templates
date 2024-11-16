@@ -39,7 +39,7 @@
     workspace = {
       # Runs when a workspace is first created
       onCreate = {
-        bundle-install = "nix-shell -p libyaml && bundle install";
+        bundle-install = "nix-shell -p libyaml --run 'bundle install'";
         # Open editors for the following files by default, if they exist:
         default.openFiles = [ ".idx/dev.nix" "README.md" ];
       };
