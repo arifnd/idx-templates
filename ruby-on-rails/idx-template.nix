@@ -7,6 +7,7 @@
     pkgs.gcc
     pkgs.gnumake
     pkgs.tzdata
+    pkgs.git
   ];
 
   bootstrap = ''
