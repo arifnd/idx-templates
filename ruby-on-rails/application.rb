@@ -24,6 +24,6 @@ module Blog3
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
 
-    config.hosts << "3000-"+ENV["WEB_HOST"]
+    config.hosts << "9000-"+ENV["WEB_HOST"]
   end
 end
