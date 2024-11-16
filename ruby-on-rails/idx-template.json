@@ -1,0 +1,11 @@
+{
+  "name": "Ruby on Rails",
+  "description": "Compress the complexity of modern web apps.",
+  "categories": [
+    "Web app",
+    "Backend"
+  ],
+  "icon": "",
+  "website": "https://rubyonrails.org/",
+  "publisher": "Ari Effendi",
+}
