@@ -9,11 +9,11 @@
   ];
 
   bootstrap = ''
-    nix-shell -p libyaml
+    /google/idx/builtins/bin/nix-shell -p libyaml
 
     export HOME=/home/user
 
-    rails new "$out"
+    /usr/bin/rails new "$out"
 
     cp -rf ${./application.rb} "$out/config/application.rb"
 
