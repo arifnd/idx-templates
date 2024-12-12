@@ -20,5 +20,8 @@
     mkdir -p "$out/.idx/"
 
     cp -rf ${./dev.nix} "$out/.idx/dev.nix"
+
+    # Fix carbon error.
+    sed -i "s/'lifetime' => env('SESSION_LIFETIME', \([0-9]*\))/'lifetime' => (int) env('SESSION_LIFETIME', \1)/" "$out/config/session.php"
   '';
 }
