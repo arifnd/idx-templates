@@ -19,16 +19,16 @@
 
     mkdir -p "$out/.idx/"
 
-  if [ "${php}" = "php83" ]; then \
+  if [ "${php}" == "php83" ]; then \
     cp -rf $(./php83.nix} "$out/.idx/dev.nix" \
-    elif [ "${php}" = "php84" ]; then \
+    elif [ "${php}" == "php84" ]; then \
     cp -rf $(./php84.nix} "$out/.idx/dev.nix" \
     else \
     cp -rf $(./php82.nix} "$out/.idx/dev.nix" \
     fi
 
     # Fix carbon error.
-    if [ "${version}" = "12.x-dev" ]; then \
+    if [ "${version}" == "12.x-dev" ]; then \
       sed -i "s/'lifetime' => env('SESSION_LIFETIME', \([0-9]*\))/'lifetime' => (int) env('SESSION_LIFETIME', \1)/" "$out/config/session.php" \
       fi
   '';
