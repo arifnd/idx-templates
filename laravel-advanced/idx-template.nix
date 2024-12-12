@@ -1,7 +1,7 @@
 { pkgs, version ? "11.x", php ? "php82" , ... }: {
   packages = [
-    pkgs.${php}
-    pkgs.${php}Packages.composer
+    pkgs.php82
+    pkgs.php82Packages.composer
   ];
 
   bootstrap = ''
@@ -21,9 +21,9 @@
 
     cp -rf "./${php}.nix" "$out/.idx/dev.nix"
 
-    if [ "${version}" = "12.x-dev" ]; then
-      # Fix carbon error.
-      sed -i "s/'lifetime' => env('SESSION_LIFETIME', \([0-9]*\))/'lifetime' => (int) env('SESSION_LIFETIME', \1)/" "$out/config/session.php"
-    fi
+    # Fix carbon error.
+    if [ "${version}" = "12.x-dev" ]; then \
+      sed -i "s/'lifetime' => env('SESSION_LIFETIME', \([0-9]*\))/'lifetime' => (int) env('SESSION_LIFETIME', \1)/" "$out/config/session.php" \
+      fi
   '';
 }
