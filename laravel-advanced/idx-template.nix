@@ -19,7 +19,13 @@
 
     mkdir -p "$out/.idx/"
 
-    cp -rf "./${php}.nix" "$out/.idx/dev.nix"
+  if [ "${php}" = "php83" ]; then \
+    cp -rf $(./php83.nix} "$out/.idx/dev.nix" \
+    elif [ "${php}" = "php84" ]; then \
+    cp -rf $(./php84.nix} "$out/.idx/dev.nix" \
+    else \
+    cp -rf $(./php82.nix} "$out/.idx/dev.nix" \
+    fi
 
     # Fix carbon error.
     if [ "${version}" = "12.x-dev" ]; then \
