@@ -1,0 +1,11 @@
+{
+    "name": "Laravel 12 (Dev)",
+    "description": "Build a web application with Laravel 12 and PHP",
+    "categories": [
+        "Web app",
+        "Backend"
+      ],
+    "icon": "",
+    "website": "https://laravel.com/",
+    "publisher": "Ari Effendi"
+}
