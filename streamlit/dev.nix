@@ -38,7 +38,7 @@
       # Runs when a workspace is first created
       onCreate = {
         # Setup Streamlit
-        streamlit-setup = "conda init && source ~/.bashrc && conda create -n stenv python=3.9 && pip install streamlit";
+        streamlit-setup = "conda init && source ~/.bashrc && conda create -n stenv python=3.9 --yes && conda activate stenv && pip install streamlit";
         # Open editors for the following files by default, if they exist:
         # default.openFiles = [ ".idx/dev.nix" "README.md" ];
       };
