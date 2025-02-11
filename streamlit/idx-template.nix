@@ -10,6 +10,6 @@
 
     cp -rf ${./dev.nix} "$out/.idx/dev.nix"
 
-    cp -rf ${./setup.sh} "$out/ssetup.sh"
+    cp -rf ${./setup.sh} "$out/setup.sh"
   '';
 }
