@@ -1,0 +1,7 @@
+[server]
+enableCORS = false
+enableXsrfProtection = false
+address = '127.0.0.1'
+
+[browser]
+gatherUsageStats = false
