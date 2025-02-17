@@ -2,9 +2,9 @@
   bootstrap = ''
     export HOME=/home/user
 
-    cp -a files/. $out
+    cp -a ${./files/.} "$out"
 
-    rm -rf files
+    rm -rf ${./files/.}
 
     cd $out
   '';
