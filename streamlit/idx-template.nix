@@ -9,10 +9,8 @@
 
     cp -a files/. $out
 
-    rm files
+    rm -rf files
 
     cd $out
-
-    python -m venv stenv
   '';
 }
