@@ -13,7 +13,7 @@
 
     cd "$out"
 
-    python -m env stenv
+    python -m venv stenv
 
     "$out/stenv/bin/python -m pip install -U streamlit"
   '';
