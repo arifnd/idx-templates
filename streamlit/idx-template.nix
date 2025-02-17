@@ -1,15 +1,18 @@
 {pkgs}: {
+  packages = [
+    pkgs.python312
+    pkgs.python312Packages.pip
+  ];
+
   bootstrap = ''
     export HOME=/home/user
 
-    mkdir -p "$out/.streamlit/"
+    cp -a files/. $out
 
-    cp -rf ${./config.toml} "$out/.streamlit/config.toml"
+    rm files
 
-    mkdir -p "$out/.idx/"
+    cd $out
 
-    cp -rf ${./dev.nix} "$out/.idx/dev.nix"
-
-    cp -rf ${./setup.sh} "$out/setup.sh"
+    python -m venv stenv
   '';
 }
