@@ -6,16 +6,15 @@
   # Use https://search.nixos.org/packages to find packages
   packages = [
     pkgs.python312
-    pkgs.python312Packages.conda
     pkgs.python312Packages.pip
-    pkgs.conda
   ];
   # Sets environment variables in the workspace
   env = {};
   idx = {
     # Search for the extensions you want on https://open-vsx.org/ and use "publisher.id"
     extensions = [
-      # "vscodevim.vim"
+      "ms-python.python"
+      "ms-python.debugpy"
     ];
     # Enable previews
     previews = {
@@ -37,15 +36,11 @@
     workspace = {
       # Runs when a workspace is first created
       onCreate = {
-        # Setup Streamlit
-        setup = "./setup.sh";
         # Open editors for the following files by default, if they exist:
-        # default.openFiles = [ ".idx/dev.nix" "README.md" ];
+        default.openFiles = [ "README.md" ];
       };
       # Runs when the workspace is (re)started
       onStart = {
-        # Example: start a background task to watch and re-build backend code
-        # conda-activate = "conda activate stenv";
       };
     };
   };
