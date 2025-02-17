@@ -1,9 +1,4 @@
 {pkgs}: {
-  packages = [
-    pkgs.python312
-    pkgs.python312Packages.pip
-  ];
-
   bootstrap = ''
     export HOME=/home/user
 
