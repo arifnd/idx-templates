@@ -18,7 +18,7 @@
     ];
     # Enable previews
     previews = {
-      enable = false;
+      enable = true;
       previews = {
         # web = {
         #   # Example: run "npm run dev" with PORT set to IDX's defined port for previews,
@@ -38,7 +38,7 @@
       onCreate = {
         setup-venv = "python -m venv stenv && ./stenv/bin/python -m pip install -U streamlit";
         # Open editors for the following files by default, if they exist:
-        default.openFiles = [ "README.md" ];
+        default.openFiles = [ "README.md" "streamlit_app.py"];
       };
       # Runs when the workspace is (re)started
       onStart = {
