@@ -38,7 +38,7 @@
       onCreate = {
         setup-venv = "python -m venv stenv && ./stenv/bin/python -m pip install -U streamlit";
         # Open editors for the following files by default, if they exist:
-        default.openFiles = [ "README.md" "streamlit_app.py"];
+        default.openFiles = [ "streamlit_app.py" "README.md"];
       };
       # Runs when the workspace is (re)started
       onStart = {
