@@ -4,7 +4,7 @@
     "categories": [
       "Web app"
     ],
-    "icon": "",
+    "icon": "https://raw.githubusercontent.com/arifnd/idx-templates/refs/heads/main/streamlit/icon.png",
     "website": "https://streamlit.io/",
     "publisher": "Ari Effendi"
   }
