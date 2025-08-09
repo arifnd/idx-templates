@@ -6,11 +6,11 @@
             "id": "version",
             "name": "Version",
             "type": "enum",
-            "default": "11.x",
+            "default": "12.x",
             "options": {
                 "10.x": "10",
                 "11.x": "11",
-                "12.x-dev": "12"
+                "12.x": "12"
             },
             "required": true
         },
@@ -18,7 +18,7 @@
             "id": "php",
             "name": "PHP",
             "type": "enum",
-            "default": "php82",
+            "default": "8.4",
             "options": {
                 "php82": "8.2",
                 "php83": "8.3",
