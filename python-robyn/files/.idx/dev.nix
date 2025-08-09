@@ -42,7 +42,7 @@
       };
       # Runs when the workspace is (re)started
       onStart = {
-        run-server = "./venv/bin/python app.py";
+        run-server = "./venv/bin/robyn app.py --dev";
       };
     };
   };
