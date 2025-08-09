@@ -1,0 +1,11 @@
+{
+    "name": "Robyn",
+    "description": "A Fast, Innovator Friendly, and Community Driven Python Web Framework",
+    "categories": [
+        "Web app",
+        "Backend"
+    ],
+    "icon": "",
+    "website": "https://laravel.com/",
+    "publisher": "Ari Effendi"
+}
