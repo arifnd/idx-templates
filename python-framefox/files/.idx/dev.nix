@@ -42,7 +42,7 @@
       };
       # Runs when the workspace is (re)started
       onStart = {
-        run-server = "./venv/bin/framefox run";
+        run-server = "PATH=./venv/bin:$PATH ./venv/bin/framefox run";
       };
     };
   };
