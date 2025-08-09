@@ -1,0 +1,11 @@
+{
+    "name": "Framefox",
+    "description": "The swift, smart, and a bit foxy Python framework!",
+    "categories": [
+        "Web app",
+        "Backend"
+    ],
+    "icon": "",
+    "website": "https://soma-smart.github.io/framefox/",
+    "publisher": "Ari Effendi"
+}
