@@ -18,7 +18,7 @@
             "id": "php",
             "name": "PHP",
             "type": "enum",
-            "default": "8.4",
+            "default": "php84",
             "options": {
                 "php82": "8.2",
                 "php83": "8.3",
