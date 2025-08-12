@@ -1,0 +1,11 @@
+{
+    "name": "CodeIgniter 4",
+    "description": "The small framework with powerful features",
+    "categories": [
+        "Web app",
+        "Backend"
+      ],
+    "icon": "https://www.codeigniter.com/assets/icons/ci-logo.png",
+    "website": "https://www.codeigniter.com/",
+    "publisher": "Ari Effendi"
+}
