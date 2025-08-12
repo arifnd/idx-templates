@@ -16,25 +16,27 @@
     # pkgs.mailpit
   ];
 
-  # Enable to install MySQL/MariaDB
+  # Enable services.mysql to install
+  # MySQL/MariaDB (default MySQL)
+  # Use 127.0.0.1 for hostname
   # services.mysql = {
   #   enable = true;
-  #   package = pkgs.mariadb;
+  #   package = pkgs.mariadb; # Enable to install MariaDB
   # };
 
-  # Enable to install PostgreSQL
+  # Enable services.postgres to install PostgreSQL
   # services.postgres = {
   #   enable = true;
   #   package = pkgs.postgresql;
   # };
 
-  # Enable to install Redis
+  # Enable services.redis to install Redis
   # services.redis = {
   #   enable = true;
   #   port = 6379;
   # };
 
-  # Enable to install Docker
+  # Enable services.docker.enable to install Docker
   # services.docker.enable = true;
 
   # Sets environment variables in the workspace
