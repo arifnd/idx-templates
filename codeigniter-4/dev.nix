@@ -19,19 +19,19 @@
   # Enable to install MySQL/MariaDB
   # services.mysql = {
   #   enable = true;
-  #   package = pkgs.mariadb
+  #   package = pkgs.mariadb;
   # };
 
   # Enable to install PostgreSQL
   # services.postgres = {
   #   enable = true;
-  #   package = pkgs.postgresql
+  #   package = pkgs.postgresql;
   # };
 
   # Enable to install Redis
   # services.redis = {
   #   enable = true;
-  #   port = 6379
+  #   port = 6379;
   # };
 
   # Enable to install Docker
